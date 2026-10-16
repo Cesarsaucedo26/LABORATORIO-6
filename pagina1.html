@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagina 1 - ¿Qué es Git?</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Laboratorio 6</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Mostrar menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="pagina1.html">pagina 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina2.html">pagina 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina3.html">pagina 3</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="container my-4">
+  <h1 class="mb-3">¿Qué es Git?</h1>
+  <p>Git es un sistema de control de versiones distribuido. Registra los cambios que se hacen sobre los archivos de un proyecto para poder consultar o recuperar cualquier versión anterior en el momento que sea necesario.</p>
+  <p>Cada vez que guardamos un estado importante del proyecto creamos un commit, que funciona como una fotografía del trabajo con un mensaje que explica qué cambió y por qué.</p>
+  <p>Gracias a Git varias personas pueden trabajar sobre los mismos archivos sin pisarse entre sí, y el historial completo queda disponible para todo el equipo.</p>
+  <div class="alert alert-info" role="alert">
+    <strong>Dato útil:</strong> Git funciona en tu computadora; GitHub es el servicio en la nube donde se comparten los repositorios.
+  </div>
+  <div class="row g-4 mt-1">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/p1a.jpg" class="card-img-top" alt="Historial de cambios">
+          <div class="card-body">
+            <h5 class="card-title">Historial de cambios</h5>
+            <p class="card-text">Cada commit guarda quién, cuándo y qué se modificó.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/p1b.jpg" class="card-img-top" alt="Trabajo en equipo">
+          <div class="card-body">
+            <h5 class="card-title">Trabajo en equipo</h5>
+            <p class="card-text">Varias personas colaboran sobre el mismo proyecto.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/p1c.jpg" class="card-img-top" alt="Copias de seguridad">
+          <div class="card-body">
+            <h5 class="card-title">Copias de seguridad</h5>
+            <p class="card-text">El código queda a salvo en el repositorio remoto.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</main>
+<footer class="bg-dark text-light text-center py-3 mt-5">
+  <small>Programación Web · Laboratorio 6 · FIME-UANL</small>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

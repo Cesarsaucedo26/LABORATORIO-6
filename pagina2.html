@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagina 2 - Flujo de trabajo</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Laboratorio 6</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Mostrar menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina1.html">pagina 1</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="pagina2.html">pagina 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina3.html">pagina 3</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="container my-4">
+  <h1 class="mb-3">Flujo básico de trabajo</h1>
+  <p>El ciclo diario con Git consta de pocos pasos: revisar el estado, preparar los cambios, confirmarlos y subirlos al servidor.</p>
+  <p>Primero se modifican los archivos en la carpeta del proyecto; después se eligen cuáles cambios formarán parte del siguiente commit usando el área de preparación (staging area).</p>
+  <p>Por último, el commit se envía al repositorio remoto con push para que el resto del equipo pueda descargarlo.</p>
+  <div class="row g-4 my-2">
+    <div class="col-md-4"><img src="img/p2a.jpg" class="img-fluid rounded" alt="git add"></div>
+    <div class="col-md-4"><img src="img/p2b.jpg" class="img-fluid rounded" alt="git commit"></div>
+    <div class="col-md-4"><img src="img/p2c.jpg" class="img-fluid rounded" alt="git push"></div>
+  </div>
+  <div class="accordion mt-4" id="comandos">
+    <div class="accordion-item">
+      <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c1">git status</button></h2>
+      <div id="c1" class="accordion-collapse collapse show" data-bs-parent="#comandos"><div class="accordion-body">Muestra el estado del repositorio y los archivos rastreados y no rastreados.</div></div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2">git add -A</button></h2>
+      <div id="c2" class="accordion-collapse collapse" data-bs-parent="#comandos"><div class="accordion-body">Agrega todos los cambios y archivos nuevos al área de preparación.</div></div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3">git commit -m "mensaje"</button></h2>
+      <div id="c3" class="accordion-collapse collapse" data-bs-parent="#comandos"><div class="accordion-body">Crea un commit con los cambios preparados y una descripción.</div></div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c4">git push</button></h2>
+      <div id="c4" class="accordion-collapse collapse" data-bs-parent="#comandos"><div class="accordion-body">Sube los commits locales al repositorio remoto en GitHub.</div></div>
+    </div>
+  </div>
+  <div class="mt-4">
+    <p class="mb-1">Progreso del laboratorio</p>
+    <div class="progress" role="progressbar" aria-label="Progreso" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar progress-bar-striped" style="width: 75%">75%</div>
+    </div>
+  </div>
+</main>
+<footer class="bg-dark text-light text-center py-3 mt-5">
+  <small>Programación Web · Laboratorio 6 · FIME-UANL</small>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

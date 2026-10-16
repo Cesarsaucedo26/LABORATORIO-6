@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagina 3 - GitHub y colaboración</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Laboratorio 6</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Mostrar menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina1.html">pagina 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina2.html">pagina 2</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="pagina3.html">pagina 3</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="container my-4">
+  <h1 class="mb-3">GitHub y colaboración</h1>
+  <p>GitHub aloja repositorios de Git en la nube. Allí se guarda el código, se revisa el historial y se invita a otras personas a participar como colaboradores.</p>
+  <p>Un colaborador puede clonar el repositorio, modificar archivos y subir sus cambios con push, siempre que el dueño le haya dado permiso.</p>
+  <p>También se pueden crear ramas para probar ideas sin afectar la rama principal, y unirlas después cuando el trabajo esté listo.</p>
+  <div class="mb-3">
+    <span class="badge text-bg-primary">Git</span>
+    <span class="badge text-bg-success">GitHub</span>
+    <span class="badge text-bg-warning">Commit</span>
+    <span class="badge text-bg-danger">Push</span>
+    <span class="badge text-bg-secondary">Colaboradores</span>
+  </div>
+  <div id="galeria" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner rounded">
+      <div class="carousel-item active">
+        <img src="img/p3a.jpg" class="d-block w-100" alt="Repositorio remoto">
+        <div class="carousel-caption d-none d-md-block"><h5>Repositorio remoto</h5></div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/p3b.jpg" class="d-block w-100" alt="Colaboradores">
+        <div class="carousel-caption d-none d-md-block"><h5>Colaboradores</h5></div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/p3c.jpg" class="d-block w-100" alt="Ramas (branches)">
+        <div class="carousel-caption d-none d-md-block"><h5>Ramas (branches)</h5></div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#galeria" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Anterior</span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#galeria" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Siguiente</span></button>
+  </div>
+  <div class="mt-4">
+    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ayuda">¿Cómo agrego un colaborador?</button>
+  </div>
+  <div class="modal fade" id="ayuda" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog"><div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Agregar colaboradores</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button></div>
+      <div class="modal-body">En el repositorio entra a Settings, luego Collaborators y elige Add people. Escribe el usuario de GitHub de tu compañero y envía la invitación.</div>
+      <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></div>
+    </div></div>
+  </div>
+</main>
+<footer class="bg-dark text-light text-center py-3 mt-5">
+  <small>Programación Web · Laboratorio 6 · FIME-UANL</small>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
